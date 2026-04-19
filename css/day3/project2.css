@@ -1,0 +1,30 @@
+#container{
+    background-color:white;
+    height:340px;
+    width: 400px;
+    }
+#rec{
+    background-color:crimson;
+    height: 100px;
+
+}
+#rec1{
+    background-color:darkblue;
+    height:140px;
+    position:relative;
+}
+#rec2{
+    background-color:crimson;
+    height: 100px;
+
+}
+#circle{
+    background-color:white;
+    height:100px;
+    width:100px;
+    border-radius:50px;
+    position:relative;
+    left:150px;
+    top:20px;
+
+}

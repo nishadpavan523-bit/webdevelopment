@@ -1,0 +1,30 @@
+#container{
+    background-color:antiquewhite;
+    height:500px;
+    width:800px;
+    margin:200px;
+    position:relative;
+}
+#container1{
+    background-color:darkslateblue;
+    height:250px;
+    width:400px;
+    /* position:absolute; */
+    position:relative;
+    top:125px;
+    left:200px;
+}
+#container2{
+    background-color:yellow;
+    height:250px;
+    width:40px;
+    position:absolute;
+    left: 120px;
+}
+#container3{
+    background-color:yellow;
+    height: 40px;
+    width:400px;
+    position:absolute;
+    top:110px;
+}

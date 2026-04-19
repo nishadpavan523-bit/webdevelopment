@@ -1,0 +1,33 @@
+h1{
+    background-color:chocolate;
+    height:300px;
+    width: 300px;
+    /* border-width:6px;
+    border-style:ridge;
+    border-color:black; */
+    border: 10px solid green;
+    padding: 10px;
+    margin:30px;
+    border-radius:10px;
+
+
+    /* border-top:solid 10px black;
+    border-bottom:solid 10px blue;
+    padding-top:10px;
+    /* padding-left:10px; */
+    /* padding:10px 20px 30px 40px; */
+    /* padding: 20px 40px; */ */
+}
+h2{
+     background-color:pink;
+     border: 5px solid yellow;
+     margin:50px;
+     padding:10px;
+}
+p
+{
+    background-color:aquamarine;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+}

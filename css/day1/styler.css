@@ -1,0 +1,94 @@
+/* tag base elements selection */
+/* h1{
+    background-color: aqua;
+}
+h2{
+    background-color: lightgray;
+}
+ol{
+    background-color: lightgreen;
+} */
+
+
+
+
+
+ /* id base */
+ /* #first{
+    background-color: lightblue;
+ }
+ #second{
+    background-color: rgb(121, 26, 89);
+ } */
+
+
+
+ /* class base */
+ /* .first{
+    background-color: blue;
+    }
+ .second{
+    background-color:blueviolet
+ } 
+ .third{
+    background-color:aqua;
+ }   */
+
+
+ /* group base selectin */
+ /* h1{
+    background-color: rgba(64, 74, 75, 0.9);
+ }
+ h2,.third{
+    background-color: lightblue;
+ }
+ #second{
+    background-color: lightgreen;
+ } */
+
+ /* h2{
+    background-color:rgba(19, 17, 136, 9);
+ } */
+
+ /* h2{
+    background-color:#346472;
+ } */
+
+
+
+
+
+ /* FONT */
+ /* h1{
+    font-size: 5em;
+ } */
+ /* h2{
+    font-size: 50px;
+ } */
+  /* h2{
+    font-size: 3rem;
+  } */
+   /* ol{
+    font-size: 2vw;
+   }
+   ul{
+    font-size: 6vh;
+   }
+   li{
+    font-size: 100%;
+   }
+   h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+   }
+   h2{
+      font-weight:800;
+      font-style:normal
+   } */
+   h1{
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300 ;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+   }
