@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+.container{
+    display:grid;
+    height:800px;
+    width:800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding:10px;
+    margin:10px;
+    gap:15px;
+    
+
+
+}
+.first{
+background-color:green;
+grid-row:1/4;
+}
+.second{
+    background-color:green;
+    grid-column:2/4;
+}
+.third{
+    background-color:red;
+}
+.fourth{
+    background-color:orange;
+    grid-column:2/3;
+}
+.fivth{
+     background-color:red;
+     grid-column:3/4;
+}
+.sixth{
+    background-color:green;
+    grid-row:2/4;
+    grid-column:4/5;
+
+}
+.seventh{
+    background-color:red;
+}
+.eight{
+    background-color:orange;
+}
