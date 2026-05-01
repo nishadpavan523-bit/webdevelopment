@@ -5,6 +5,11 @@
 }
 body{
     background-color:black;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
 .container{
     display:grid;
@@ -14,8 +19,7 @@ body{
     grid-template-rows:100px 100px 100px 100px 100px 100px 100px 100px; */
     grid-template-rows:repeat(8,1fr);
     grid-template-columns:repeat(8,1fr);
-    padding:5px;
-    margin:5px;
+    
 }   
 .first{
     background-color:white;
