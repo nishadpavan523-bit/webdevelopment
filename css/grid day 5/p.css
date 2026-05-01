@@ -36,11 +36,11 @@ grid-row:1/4;
 }
 .fourth{
     background-color:orange;
-    grid-column:2/3;
+    /* grid-column:2/3; */
 }
 .fivth{
      background-color:red;
-     grid-column:3/4;
+     /* grid-column:3/4; */
 }
 .sixth{
     background-color:green;
