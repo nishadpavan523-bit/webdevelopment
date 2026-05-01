@@ -1,0 +1,64 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    height: 1200px;
+    background-color:black;
+    width:1200px;
+}
+.first{
+    display:flex;
+    height:200px;
+    background-color:blue;
+    padding:10px;
+    margin:10px;
+     
+}
+.second{
+    display:flex;
+    height:800px;
+    gap:10px;
+    padding:10px;
+}
+.a{
+    width:400px;
+    background-color:yellow;
+}
+.seconda{
+    width:800px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+}
+.p{
+    height:400px;
+    background-color:yellow;
+    /* gap:10px;
+    padding:10px; */
+}
+.b{
+    height:400px;
+    background-color:aqua;
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+.l{
+    width:380px;
+    height:380px; 
+   
+}
+.bm{
+    width:380px;
+    height:380px;
+    /* background-color:blueviolet; */
+}
+.third{
+    height:200px;
+    background-color:blue;
+    gap:10px;
+    padding:10px;
+    margin:10px;
+}
