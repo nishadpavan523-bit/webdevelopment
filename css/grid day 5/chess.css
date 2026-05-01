@@ -1,0 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:order-box;
+}
+body{
+    background-color:black;
+}
+.container{
+    display:grid;
+    height:800px;
+    width:800px;
+    /* grid-template-columns:100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows:100px 100px 100px 100px 100px 100px 100px 100px; */
+    grid-template-rows:repeat(8,1fr);
+    grid-template-columns:repeat(8,1fr);
+    padding:5px;
+    margin:5px;
+}   
+.first{
+    background-color:white;
+
+}
+.second{
+    background-color:purple;
+    
+}
