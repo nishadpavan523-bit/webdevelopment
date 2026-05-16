@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For  Bauua  💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #ff1493;
+            --secondary: #ff69b4;
+            --dark: #2d1b2e;
+            --light: #fff5f7;
+            --accent: #ffd700;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a0033 0%, #330066 50%, #1a0033 100%);
+            background-attachment: fixed;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(255, 20, 147, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(255, 20, 147, 0.8), 0 0 50px rgba(255, 105, 180, 0.6); }
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(255, 20, 147, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(255, 20, 147, 0); }
+        }
+
+        /* ============ HEADER / HERO ============ */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(255, 20, 147, 0.1) 0%, rgba(255, 105, 180, 0.1) 100%), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect fill="none" width="1200" height="600"/><rect fill="url(%23dots)" width="1200" height="600"/></svg>');
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-content {
+            animation: slideInUp 1s ease-out;
+            z-index: 1;
+            max-width: 90%;
+        }
+
+        .heart-icon {
+            font-size: 80px;
+            animation: heartbeat 1.2s ease-in-out infinite;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(255, 20, 147, 0.5);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 40px;
+            font-style: italic;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 20, 147, 0.6);
+        }
+
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* ============ SECTIONS ============ */
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary);
+            animation: slideInUp 0.8s ease-out;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ============ ABOUT SECTION ============ */
+        .about {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 245, 247, 0.95) 100%);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(255, 20, 147, 0.2), 
+                        0 0 40px rgba(255, 105, 180, 0.1);
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-frame {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            box-shadow: 0 15px 50px rgba(255, 20, 147, 0.3);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        /* ============ FEATURES SECTION ============ */
+        .features {
+            background: transparent;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 247, 0.95));
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(255, 20, 147, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ============ MEMORIES SECTION ============ */
+        .memories {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 247, 0.95));
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(255, 20, 147, 0.2);
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .memory-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .memory-item {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+            transition: all 0.3s ease;
+            animation: slideInUp 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .memory-item:nth-child(1) { animation-delay: 0.1s; }
+        .memory-item:nth-child(2) { animation-delay: 0.2s; }
+        .memory-item:nth-child(3) { animation-delay: 0.3s; }
+        .memory-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .memory-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        .memory-item:hover {
+            transform: scale(1.05) rotateY(10deg);
+            box-shadow: 0 15px 50px rgba(255, 20, 147, 0.5);
+        }
+
+        .memory-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .memory-item p {
+            font-size: 0.95rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============ REASONS SECTION ============ */
+        .reasons {
+            background: transparent;
+        }
+
+        .reasons-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .reason-box {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 247, 0.95));
+            padding: 30px;
+            border-left: 5px solid var(--primary);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+            animation: slideInLeft 0.8s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        .reason-box:nth-child(1) { animation-delay: 0.1s; }
+        .reason-box:nth-child(2) { animation-delay: 0.2s; }
+        .reason-box:nth-child(3) { animation-delay: 0.3s; }
+        .reason-box:nth-child(4) { animation-delay: 0.4s; }
+        .reason-box:nth-child(5) { animation-delay: 0.5s; }
+
+        .reason-box:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 40px rgba(255, 20, 147, 0.3);
+        }
+
+        .reason-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            margin-right: 15px;
+            animation: rotate 3s linear infinite;
+        }
+
+        .reason-text h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .reason-text p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ============ MESSAGE SECTION ============ */
+        .message {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            padding: 80px 40px;
+            box-shadow: 0 20px 60px rgba(255, 20, 147, 0.3);
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .message h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .message-text {
+            font-size: 1.3rem;
+            line-height: 2;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        .signature {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            font-family: 'Brush Script MT', 'Lucida Calligraphy', cursive;
+            font-weight: bold;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-top: 3px solid var(--primary);
+        }
+
+        .footer-hearts {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            animation: heartbeat 1.2s ease-in-out infinite;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .image-frame {
+                width: 250px;
+                height: 250px;
+                font-size: 100px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about, .memories, .message {
+                padding: 40px 30px;
+            }
+
+            .message h2 {
+                font-size: 2rem;
+            }
+
+            .message-text {
+                font-size: 1.1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reason-box {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .heart-icon {
+                font-size: 50px;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .about, .memories, .message {
+                padding: 30px 20px;
+            }
+
+            .image-frame {
+                width: 200px;
+                height: 200px;
+                font-size: 80px;
+            }
+
+            .message h2 {
+                font-size: 1.5rem;
+            }
+
+            .message-text {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER / HERO SECTION -->
+    <header>
+        <div class="floating-hearts">
+            <div class="heart" style="left: 10%; top: 20%; animation-delay: 0s;">💕</div>
+            <div class="heart" style="left: 80%; top: 30%; animation-delay: 1s;">💗</div>
+            <div class="heart" style="left: 30%; top: 70%; animation-delay: 2s;">💖</div>
+            <div class="heart" style="left: 90%; top: 60%; animation-delay: 3s;">💝</div>
+            <div class="heart" style="left: 20%; top: 50%; animation-delay: 1.5s;">❤️</div>
+            <div class="heart" style="left: 70%; top: 80%; animation-delay: 2.5s;">💕</div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="heart-icon">💖</div>
+            <h1>For You, Bauua</h1>
+             <p class="subtitle">You are my greatest blessing
+             I LOVE YOU BACCHA</p>
+            
+            <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Explore My Love Story</button>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Bauua, from the moment I met you, my life became a beautiful journey. Your smile lights up my world, and your presence fills my heart with an indescribable joy.
+                </p>
+                <p>
+                    You are not just my girlfriend; you are my every thing. Every moment with you is precious, every word you say means the world to me.
+                </p>
+                <p>
+                    This page is a small tribute to the immense love I have for you. Let me walk you through the reasons why you mean everything to me.
+                </p>
+            </div>
+            <div class="about-image">
+                <div class="image-frame">✨</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <h2 class="section-title">Why You're Special</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">😊</div>
+                <h3>Your Smile</h3>
+                <p>It's the most beautiful thing that brightens even my darkest days. I could watch it forever.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Your Strength</h3>
+                <p>The way you face challenges with grace and determination inspires me to be a better person.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">❤️</div>
+                <h3>Your Heart</h3>
+                <p>Your kindness and compassion towards everyone around you shows your beautiful soul.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMORIES SECTION -->
+    <section class="memories">
+        <h2 class="section-title">Cherished Moments Together</h2>
+        <div class="memory-list">
+            <div class="memory-item">
+                <h4>🌙 Late Night Talks</h4>
+                <p>Those conversations where we share our dreams and fears, just you and me against the world.</p>
+            </div>
+                       <div class="memory-item">
+                <h4>🌅 Every Sunrise</h4>
+                <p>Knowing I get to see another day with you makes every sunrise feel like a blessing.</p>
+            </div>
+            <div class="memory-item">
+                <h4>🎵 Our Song</h4>
+                <p>Music sounds better when I think of you. You are my favorite melody.</p>
+              <a href="https://www.youtube.com/watch?v=9udS0mpi1L4" target="_blank">
+    <button>Watch Video</button>
+</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REASONS SECTION -->
+    <section class="reasons">
+        <h2 class="section-title">101 Reasons I Love You</h2>
+        <div class="reasons-wrapper">
+            <div class="reason-box">
+                <div class="reason-number">1</div>
+                <div class="reason-text">
+                    <h3>Your Laugh</h3>
+                    <p>It's contagious and makes everything feel right in the world. I could listen to it all day.</p>
+                </div>
+            </div>
+            <div class="reason-box">
+                <div class="reason-number">2</div>
+                <div class="reason-text">
+                    <h3>Your Kindness</h3>
+                    <p>You treat everyone with respect and compassion. You have the most beautiful soul.</p>
+                </div>
+            </div>
+            <div class="reason-box">
+                <div class="reason-number">3</div>
+                <div class="reason-text">
+                    <h3>Your Dreams</h3>
+                    <p>Your ambitions and goals inspire me. I believe in you and everything you want to achieve.</p>
+                </div>
+            </div>
+            <div class="reason-box">
+                <div class="reason-number">4</div>
+                <div class="reason-text">
+                    <h3>Your Support</h3>
+                    <p>Through thick and thin, you've been my rock. Your love gives me strength.</p>
+                </div>
+            </div>
+            <div class="reason-box">
+                <div class="reason-number">5</div>
+                <div class="reason-text">
+                    <h3>Your Presence</h3>
+                    <p>Just being near you makes my heart feel complete. You are my home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MESSAGE SECTION -->
+    <section class="message">
+        <h2>A Special Message For You</h2>
+        <div class="message-text">
+            <p>
+                Bauua, my heart chose you before my mind understood why. Every single day with you is a gift, 
+                and I promise to cherish you, respect you, and love you with all that I am. You are my today 
+                and all of my tomorrows. Thank you for being my reason to smile, my inspiration, and my everything.
+            </p>
+            <p style="margin-top: 30px;">
+                Forever yours,
+            </p>
+            <div class="signature">💕 With All My Love 💕</div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-hearts">💕 💖 💗 💘 💝 💕 💖 💗 💘 💝</div>
+        <p>&copy; 2026 - Made with love for Mahi Patel Bauua</p>
+        <p style="font-size: 0.9rem; margin-top: 10px;">This website is a celebration of our love story 💫</p>
+    </footer>
+</body>
+</html>
